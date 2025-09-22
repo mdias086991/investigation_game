@@ -153,3 +153,5 @@ const Results = () => {
     </div>
   );
 };
+
+export default Results;
