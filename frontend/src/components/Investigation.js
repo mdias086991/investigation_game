@@ -231,3 +231,5 @@ const Investigation = () => {
     </div>
   );
 };
+
+export default Investigation;
