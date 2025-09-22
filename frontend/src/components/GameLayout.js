@@ -27,3 +27,5 @@ const GameLayout = () => {
     </div>
   );
 };
+
+export default GameLayout;
