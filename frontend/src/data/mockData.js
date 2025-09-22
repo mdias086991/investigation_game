@@ -206,5 +206,192 @@ export const mockCases = [
         correctAnswer: 1
       }
     ]
+  },
+    {
+    id: "4",
+    title: "O Mistério do Teatro Assombrado",
+    description: "Durante uma apresentação, o diretor do teatro desapareceu misteriosamente. As câmeras internas mostram sombras estranhas.",
+    difficulty: "Médio",
+    rating: "4.6",
+    estimatedTime: "50 min",
+    solved: "1.0k",
+    story: `Na noite de sexta-feira, durante a peça principal, o diretor Hugo Carvalho desapareceu sem deixar rastros. 
+
+    As câmeras do teatro registraram apenas sombras misteriosas e portas trancadas por dentro. 
+
+    Testemunhas relatam que ouviram gritos e sons estranhos vindos dos bastidores. Você deve investigar o teatro, coletar evidências e descobrir quem ou o que causou o desaparecimento.`,
+    evidence: [
+      {
+        id: "1",
+        type: "conversation",
+        title: "Mensagem de Hugo",
+        content: "Última mensagem enviada por Hugo a um colega antes da apresentação",
+        imageUrl: "https://images.unsplash.com/photo-1508923567004-3a6b8004f3d0?w=500&h=300&fit=crop",
+        details: "Hugo: Algo estranho está acontecendo no teatro... preciso falar com você assim que possível."
+      },
+      {
+        id: "2",
+        type: "document",
+        title: "Registro de acesso do teatro",
+        content: "Lista de funcionários presentes no dia do desaparecimento",
+        imageUrl: "https://images.unsplash.com/photo-1598514982290-f9fdb2bb0c4f?w=500&h=300&fit=crop",
+        details: "Funcionários: João (cenário), Marina (figurino), Carlos (iluminação). Nenhum deixou o prédio antes do desaparecimento."
+      }
+    ],
+    suspects: [
+      {
+        name: "João",
+        role: "Cenógrafo",
+        motive: "Ciúmes profissionais",
+        alibi: "Estava ajustando o cenário durante a peça"
+      },
+      {
+        name: "Marina",
+        role: "Figurinista",
+        motive: "Desavenças antigas com o diretor",
+        alibi: "Diz ter ficado nos bastidores observando o palco"
+      },
+      {
+        name: "Carlos",
+        role: "Iluminador",
+        motive: "Desejo de assumir a direção",
+        alibi: "Afirma que estava controlando as luzes do palco"
+      }
+    ],
+    questions: [
+      {
+        id: "1",
+        question: "Quem é o principal suspeito do desaparecimento?",
+        options: ["João", "Marina", "Carlos", "Outra pessoa"],
+        correctAnswer: 2
+      },
+      {
+        id: "2",
+        question: "Onde Hugo foi visto pela última vez?",
+        options: ["Bastidores", "Palco", "Entrada principal", "Camarim"],
+        correctAnswer: 0
+      }
+    ]
+  },
+  {
+    id: "5",
+    title: "O Caso do Laboratório de Robótica",
+    description: "Um cientista renomado foi encontrado inconsciente em seu laboratório, e um protótipo de robô desapareceu.",
+    difficulty: "Difícil",
+    rating: "4.9",
+    estimatedTime: "65 min",
+    solved: "732",
+    story: `Dr. Leonardo Mendes foi encontrado desacordado no chão de seu laboratório de robótica, e seu protótipo experimental sumiu. 
+
+    O laboratório estava trancado por dentro, e sinais de luta foram encontrados apenas próximos à mesa de trabalho. 
+
+    Investigue o laboratório, descubra como o intruso entrou e recupere o protótipo desaparecido.`,
+    evidence: [
+      {
+        id: "1",
+        type: "document",
+        title: "Relatório de Segurança do Laboratório",
+        content: "Registro das câmeras e sensores de movimento",
+        imageUrl: "https://images.unsplash.com/photo-1527430253228-e93688616381?w=500&h=300&fit=crop",
+        details: "Sensor lateral desativado entre 22:00 e 22:15. Câmera do corredor ficou offline 5 minutos."
+      },
+      {
+        id: "2",
+        type: "conversation",
+        title: "E-mails suspeitos",
+        content: "Troca de mensagens entre assistentes e desconhecidos",
+        imageUrl: "https://images.unsplash.com/photo-1596495577886-d920f5c2cbbf?w=500&h=300&fit=crop",
+        details: "Desconhecido: O protótipo está pronto?\nAssistente: Sim, será transferido hoje à noite\nDesconhecido: Ótimo, ninguém deve notar"
+      }
+    ],
+    suspects: [
+      {
+        name: "Assistente Clara",
+        role: "Assistente de pesquisa",
+        motive: "Ganhos financeiros com o protótipo",
+        alibi: "Diz que estava organizando arquivos no escritório"
+      },
+      {
+        name: "Rafael",
+        role: "Concorrente de laboratório",
+        motive: "Roubo de tecnologia",
+        alibi: "Afirma que estava fora da cidade"
+      }
+    ],
+    questions: [
+      {
+        id: "1",
+        question: "Quem teve acesso ao laboratório na hora do incidente?",
+        options: ["Clara", "Rafael", "Funcionário externo", "Outra pessoa"],
+        correctAnswer: 0
+      },
+      {
+        id: "2",
+        question: "O que desapareceu do laboratório?",
+        options: ["Protótipo de robô", "Documentos sigilosos", "Equipamentos comuns", "Nada desapareceu"],
+        correctAnswer: 0
+      }
+    ]
+  },
+  {
+    id: "6",
+    title: "Mistério no Cruzeiro de Luxo",
+    description: "Durante um cruzeiro de luxo, um passageiro milionário desaparece sem deixar pistas, e uma carta anônima é encontrada em sua cabine.",
+    difficulty: "Médio",
+    rating: "4.4",
+    estimatedTime: "55 min",
+    solved: "980",
+    story: `No dia 10 de julho, o milionário Victor Albuquerque desapareceu de seu camarote durante um cruzeiro de luxo no Caribe. 
+
+    A tripulação encontrou apenas uma carta anônima dizendo: "Você sabe demais." 
+
+    Os outros passageiros afirmam não ter visto nada suspeito, mas existem inconsistências nos relatos que precisam ser investigadas.`,
+    evidence: [
+      {
+        id: "1",
+        type: "document",
+        title: "Carta Anônima",
+        content: "Carta encontrada na cabine de Victor",
+        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop",
+        details: "Carta diz apenas: 'Você sabe demais'. Escrita à mão, tinta azul."
+      },
+      {
+        id: "2",
+        type: "conversation",
+        title: "Depoimento da Tripulação",
+        content: "Relatos inconsistentes de horários e movimentação",
+        imageUrl: "https://images.unsplash.com/photo-1581091215365-1b2b1d6c2f1f?w=500&h=300&fit=crop",
+        details: "Marinheiro: Vi Victor entrando no deck às 23h\nCamareira: Não, ele estava na cabine até depois das 23h30"
+      }
+    ],
+    suspects: [
+      {
+        name: "Marcos Oliveira",
+        role: "Capitão do navio",
+        motive: "Dívida com Victor",
+        alibi: "Estava na cabine de comando durante todo o período"
+      },
+      {
+        name: "Isabela Lima",
+        role: "Coordenadora do cruzeiro",
+        motive: "Benefício em caso de desaparecimento do passageiro",
+        alibi: "Diz que estava supervisionando o salão de festas"
+      }
+    ],
+    questions: [
+      {
+        id: "1",
+        question: "Qual a principal evidência deixada na cabine?",
+        options: ["Carta anônima", "Maleta desaparecida", "Computador pessoal", "Nenhum objeto"],
+        correctAnswer: 0
+      },
+      {
+        id: "2",
+        question: "Quem pode ter interesse no desaparecimento de Victor?",
+        options: ["Capitão", "Coordenadora", "Outro passageiro", "Tripulação inteira"],
+        correctAnswer: 1
+      }
+    ]
   }
 ];
+
