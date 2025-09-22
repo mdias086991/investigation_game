@@ -104,3 +104,5 @@ const CaseDetail = () => {
     </div>
   );
 };
+
+export default CaseDetail;
