@@ -73,3 +73,5 @@ const CaseSelection = () => {
     </div>
   );
 };
+
+export default CaseSelection;
